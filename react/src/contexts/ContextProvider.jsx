@@ -3,8 +3,10 @@ import{Children, createContext} from 'react';
 
 
 const StateContext = createContext({
-    currentUser : null,
+  user : null,
     token : null,
+    setUser : () => {},
+    setToken : () => {}
 });
 
 
@@ -22,9 +24,16 @@ export const ContextProvider = ({children}) => {
         }
     return  (
         <StateContext.Provider value ={{
+user,
+token,
+setUser,
+setToken,
 
         }}>
-
+{children}
         </StateContext.Provider>
     )
 }
+
+
+export const useStateContext = () => useContext(StateContext);
