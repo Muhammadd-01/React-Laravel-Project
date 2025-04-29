@@ -4,7 +4,7 @@ import Signup from './views/Signup';
 import Users from './views/Users';
 import NotFound from './views/NotFound';
 import GuestLayout from './components/GuestLayout';
-import GuestLayout from './components/DefaultLayout';
+import DefaultLayout from './components/DefaultLayout';
 
 const router = createBrowserRouter( [
 
