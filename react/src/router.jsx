@@ -4,7 +4,7 @@ import Signup from './views/Signup';
 import Users from './views/Users';
 
 
-const router = createBrowserRouter( routes:[
+const router = createBrowserRouter( {routes:[
       {
         path : "/login",
         element : <Login/>,
@@ -18,6 +18,7 @@ const router = createBrowserRouter( routes:[
         path : "/Users",
         element : <Users/>,
       }
-])
+    
+]} )
 
 export default router;
