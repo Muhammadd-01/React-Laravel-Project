@@ -17,6 +17,10 @@ const router = createBrowserRouter( {routes:[
       {
         path : "/Users",
         element : <Users/>,
+      },
+      {
+        path : "*",
+        element : <div>404- Page Not Found</div>,
       }
     
 ]} )
